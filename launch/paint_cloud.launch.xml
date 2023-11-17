@@ -1,0 +1,20 @@
+<launch>
+
+  <arg name="tuning_file_path" default="$(find-pkg-share paint_cloud)/config/tuning.yml" />
+  <arg name="calibration_file_path" default="$(find-pkg-share paint_cloud)/config/calibration.yml" />
+  <arg name="lidar_frame" default="lidar_top" />
+  <arg name="base_frame" default="base_link" />
+  <arg name="camera_frame" default="CF_short" />
+  <arg name="image_topic" default="CF_short" />
+  <arg name="cloud_topic" default="/sensing/lidar/compensated/pointcloud" />
+
+  <node pkg="paint_cloud" exec="paint_cloud_node" name="paint_cloud" output="screen">
+    <param name="tuning_file_path" value="$(var tuning_file_path)"/>
+    <param name="calibration_file_path" value="$(var calibration_file_path)"/>
+    <param name="lidar_frame" value="$(var lidar_frame)"/>
+    <param name="camera_frame" value="$(var camera_frame)"/>
+    <param name="base_frame" value="$(var base_frame)"/>
+    <param name="image_topic" value="$(var image_topic)"/>
+    <param name="cloud_topic" value="$(var cloud_topic)"/>
+  </node>
+</launch>

@@ -1,0 +1,19 @@
+%YAML 1.0yaml
+---
+#translation_rotation
+tx:  0.000 #meter
+ty:  0.000 #meter
+tz:  0.000 #meter
+rx:  0.000 #radian
+ry:  0.000 #radian
+rz:  0.000 #radian
+
+#color_settings
+color_mode: 1            # rainbow depending on intensity(0) or distance(1)
+intensity_color_min: 0   # lower threshold for rainbow color
+intensity_color_max: 255 # upper threshold for rainbow color
+distance_color_min: 0    # lower threshold for rainbow color
+distance_color_max: 100  # upper threshold for rainbow color
+alpha: 0.7               # transparency
+radius: 0.5              # radius of projected point
+distance_max: 200        # maximum range (radius) of points display

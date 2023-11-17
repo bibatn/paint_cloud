@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>paint_cloud</name>
+  <version>0.1.0</version>
+  <description>Paint LIDAR point clouds based on camera images or segmentation results</description>
+
+  <maintainer email="corp.@nami.ru">nami</maintainer>
+  <license>Apache2</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <depend>pcl_conversions</depend>
+  <depend>pcl_ros</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_sensor_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>message_filters</depend>
+  <depend>painting_services</depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
